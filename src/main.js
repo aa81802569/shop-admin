@@ -6,9 +6,14 @@ import 'element-ui/lib/theme-chalk/index.css';
 //引入路由模块
 import VueRouter from"vue-router"
 //引入登陆页面
-import Login from"./components/Login.vue"
+import Login from"./pages/Login.vue"
+//引入admin页面
+import Admin from "./pages/Admin.vue"
+
 //配置理由
 var routes=[
+  // {path:'/',rediect:'/admin/goods-list'},
+  {path:'/admin',component:Admin},
   {path:'/login',component:Login}
 ]
 //创建路由实例
